@@ -6,6 +6,10 @@ NEW_SIZE = (1466, 1100)
 
 images = os.listdir("img/raw")
 
+# im = Image.open(infile)
+# im.thumbnail(size, Image.ANTIALIAS)
+# im.save(outfile, "jpeg")
+
 for img in images:
     img_name = img
     
