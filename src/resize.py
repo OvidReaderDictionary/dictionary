@@ -4,8 +4,13 @@ import os
 # NEW_SIZE = (1333, 1000)
 NEW_SIZE = (1466, 1100)
 
-img_name = "IMG_0238.jpeg"
-img = Image.open("img/raw/" + img_name)
-img = img.resize(NEW_SIZE)
+images = os.listdir("img/raw")
 
-img.save("img/resized/" + img_name)
+for img in images:
+    img_name = img
+    
+    new_img = Image.open("img/raw/" + img_name)
+    new_img = new_img.rotate(90)
+    new_img = new_img.resize(NEW_SIZE)
+
+    new_img.save("img/resized/" + img_name)
