@@ -1,6 +1,9 @@
 from PIL import Image
 import os
 
+os.system("mkdir -p img/raw")
+os.system("mkdir -p img/resized")
+
 # NEW_SIZE = (1333, 1000)
 NEW_SIZE = (1466, 1100)
 
