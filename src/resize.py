@@ -13,11 +13,20 @@ images = os.listdir("img/raw")
 # im.thumbnail(size, Image.ANTIALIAS)
 # im.save(outfile, "jpeg")
 
-for img in images:
-    img_name = img
+# for img in images:
+#     img_name = img
     
-    new_img = Image.open("img/raw/" + img_name)
-    new_img = new_img.rotate(90)
-    new_img = new_img.resize(NEW_SIZE)
+#     new_img = Image.open("img/raw/" + img_name)
+#     new_img = new_img.rotate(90)
+#     new_img = new_img.resize(NEW_SIZE)
 
-    new_img.save("img/resized/" + img_name)
+#     new_img.save("img/resized/" + img_name)
+
+img = "IMG_0250.jpeg"
+img_name = img
+
+new_img = Image.open("img/raw/" + img_name)
+# new_img = new_img.rotate(90)
+new_img = new_img.resize(NEW_SIZE)
+
+new_img.save("img/resized/" + img_name)
