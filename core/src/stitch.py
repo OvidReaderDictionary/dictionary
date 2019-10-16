@@ -2,7 +2,7 @@ import os
 
 files = os.listdir("./ocr/final/")
 
-all_text = [ ]
+all_text = []
 for f in files:
     with open("./ocr/final/" + f) as read_file:
         all_text.append(read_file.read())
