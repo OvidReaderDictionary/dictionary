@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <title>Ovid Dictionary</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="margin-bottom: 1%;">
+        <a class="navbar-brand" href="#">Dictionary</a>
+    </nav>
+
+    <div class="jumbotron container text-center margin-top">
+        <h1>An Ovid Reader Dictionary</h1>
+        <p>
+            In order to have this work nicely, don't put the ending of the word
+            you are trying to look up. Only put in around the root. Also, note
+            that there are no long marks in this dictionary.
+            <br>P.S.: Sorry if this is slow.
+        </p>
+    </div>
+
+    <div class="container">
+        <label for="search_term">Vocab word / search term</label>
+        <input type="text" class="form-control" id="search_term" placeholder="Search term"
+            onkeyup="search()" style="width: 40%;" />
+
+        <div class="container big-margin-top">
+            <ul class="list-group" id="dictionary"></ul>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+<html>
